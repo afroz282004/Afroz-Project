@@ -1,0 +1,113 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Show_Date";
+}
+<script src="~/lib/angular.js"></script>
+<script src="~/Scripts/MyApp.js"></script>
+
+@*<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+<script src="~/Scripts/MyControler/HomeAngularJS.js"></script>*@
+
+
+
+<div ng-app="MyApp" ng-controller="menuController">
+    <br />
+    <br />
+    <br />
+
+
+    @*<div id="tblSubs" ng-controller="RatingApiController">
+            <span ng-init="init(@ViewBag.MethodName)">something</span>
+        </div>*@
+
+    <div class="form-group">
+
+        <input type="button" class="btn btn-primary" ng-click="clickAdd()" value="ADD" />
+
+        <input type="button" id="btdropdown" class="btn btn-primary" ng-click="clickAdddropdown()" value="Dropdown" />
+    </div>
+    <form>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                <input type="text" class="form-control" placeholder="Search da Fish" ng-model="searchFish">
+            </div>
+        </div>
+    </form>
+    <table class="table table-hover ">
+        <thead>
+            <tr>
+                <th>Sr_no</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>City</th>
+
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            @*<tr>
+                    <th ng-click="sort('Sr_no')">
+                        Id
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Sr_no'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Email')">
+                        Email
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Email'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Password')">
+                        Password
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Password'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Name')">
+                        Name
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Name'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Address')">
+                        Address
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Address'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('City')">
+                        City
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='City'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>*@
+        </thead>
+        <tbody>
+            <tr ng-repeat="e in record">
+                @*<tr ng-repeat="e in record ">*@
+                <td><p>{{e.Sr_no}}</p></td>
+                <td><p>{{e.Email}}</p></td>
+                <td><p>{{e.Password}}</p></td>
+                <td><p>{{e.Name}}</p></td>
+                <td><p>{{e.Address}}</p></td>
+                <td><p>{{e.City}}</p></td>
+                <td> <p><a href="/Home/Update_Date?id={{e.Sr_no}}">Update</a></p></td>
+                <td> <p><a ng-click="Deleterecord(e.Sr_no)">Deletete</a></p></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<!--//******set the Paging******//-->
+@*<dir-pagination-controls max-size="5"
+                             direction-links="true"
+                             boundary-links="true">
+    </dir-pagination-controls>*@
+<!--//******set the Paging******//-->
+
+<script>
+
+                    //******set the sortKey******//
+                    //$scope.sort = function (keyname) {
+                    //    $scope.sortType = keyname;   //set the sortKey to the param passed
+                    //    $scope.reverse = !$scope.reverse; //if true make it false and vice versa
+                    //};
+
+                    //******set the sortKey******//
+</script>

@@ -1,0 +1,68 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>AngularJS MVC Code Project</title>
+    <script src="~/Scripts/require.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+
+
+
+    @Scripts.Render("~/bundles/angular")
+
+    @Scripts.Render("~/bundles/home")
+
+    @Scripts.Render("~/bundles/Master")
+
+    @*<script src="~/Scripts/modernizr-2.6.2.js"></script>*@
+</head>
+<body ng-app="MyApp" ng-controller="menuController">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            @* Here first of all we will create a ng-template *@
+            <script type="text/ng-template" id="treeMenu" class="main-navigation">
+                <a href="{{menu.Url}}">{{menu.Name}}</a>
+                @* We will create submenu only when available *@
+                <ul ng-if="(SiteMenu | filter:{ParentID : menu.ID}).length > 0">
+                    <li ng-repeat="menu in SiteMenu | filter:{ParentID : menu.ID}" ng-include="'treeMenu'"></li>
+                </ul>
+            </script>
+
+            <ul class="main-navigation">
+                @* Here we will load only top level menu *@
+                <li class="main-navigation" ng-repeat="menu in SiteMenu | filter:{ParentID : 0}" ng-include="'treeMenu'"></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+    @*<script src="~/Scripts/bootstrap.min.js"></script>*@
+    <!--HERE we will add angular.js library-->
+    @*<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>*@
+
+
+    <link href="~/css/navMenu.css" rel="stylesheet" />
+
+    <script src="~/lib/angular.js"></script>
+        <script src="~/Scripts/MyApp.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
