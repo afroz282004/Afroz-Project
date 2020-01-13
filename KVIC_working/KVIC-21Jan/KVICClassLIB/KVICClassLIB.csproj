@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB761DAC-40E9-4C34-A913-AF453D1B8670}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KVICClassLIB</RootNamespace>
+    <AssemblyName>KVICClassLIB</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bal\cluster_bal.cs" />
+    <Compile Include="bal\group_bal.cs" />
+    <Compile Include="bal\impagency_bal.cs" />
+    <Compile Include="bal\menu_bal.cs" />
+    <Compile Include="bal\MonthlyRFDReport_bal.cs" />
+    <Compile Include="bal\ProductMaster_bal.cs" />
+    <Compile Include="bal\techagency_bal.cs" />
+    <Compile Include="bal\transaction_bal.cs" />
+    <Compile Include="bal\users_bal.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="dal\cluster_dal.cs" />
+    <Compile Include="dal\group_dal.cs" />
+    <Compile Include="dal\impagency_dal.cs" />
+    <Compile Include="dal\menu_dal.cs" />
+    <Compile Include="dal\MonthlyRFDReport_dal.cs" />
+    <Compile Include="dal\ProductMaster_dal.cs" />
+    <Compile Include="dal\techagency_dal.cs" />
+    <Compile Include="dal\transaction_dal.cs" />
+    <Compile Include="dal\users_dal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prop\cluster_prop.cs" />
+    <Compile Include="prop\group_prop.cs" />
+    <Compile Include="prop\impagency_prop.cs" />
+    <Compile Include="prop\menu_Prop.cs" />
+    <Compile Include="prop\ProductMaster_prop.cs" />
+    <Compile Include="prop\techagency_prop.cs" />
+    <Compile Include="prop\Transaction_Prop.cs" />
+    <Compile Include="prop\users_Prop.cs" />
+    <Compile Include="SQLHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

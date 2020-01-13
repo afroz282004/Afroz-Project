@@ -1,0 +1,45 @@
+D:\frank\Projects\SFURTI\SFURTIClassLIB\bin\Debug\KVICClassLIB.dll
+D:\frank\Projects\SFURTI\SFURTIClassLIB\bin\Debug\KVICClassLIB.pdb
+D:\frank\Projects\SFURTI\SFURTIClassLIB\obj\Debug\ResolveAssemblyReference.cache
+D:\frank\Projects\SFURTI\SFURTIClassLIB\obj\Debug\KVICClassLIB.dll
+D:\frank\Projects\SFURTI\SFURTIClassLIB\obj\Debug\KVICClassLIB.pdb
+D:\ERP\SFURTI\SFURTIClassLIB\bin\Debug\KVICClassLIB.dll
+D:\ERP\SFURTI\SFURTIClassLIB\bin\Debug\KVICClassLIB.pdb
+D:\ERP\SFURTI\SFURTIClassLIB\obj\Debug\ResolveAssemblyReference.cache
+D:\ERP\SFURTI\SFURTIClassLIB\obj\Debug\KVICClassLIB.dll
+D:\ERP\SFURTI\SFURTIClassLIB\obj\Debug\KVICClassLIB.pdb
+D:\frank\Projects\SFURTI\KVICClassLIB\bin\Debug\KVICClassLIB.dll
+D:\frank\Projects\SFURTI\KVICClassLIB\bin\Debug\KVICClassLIB.pdb
+D:\frank\Projects\SFURTI\KVICClassLIB\obj\Debug\ResolveAssemblyReference.cache
+D:\frank\Projects\SFURTI\KVICClassLIB\obj\Debug\KVICClassLIB.dll
+D:\frank\Projects\SFURTI\KVICClassLIB\obj\Debug\KVICClassLIB.pdb
+C:\Data\Projects\KVIC\KVICClassLIB\bin\Debug\KVICClassLIB.dll
+C:\Data\Projects\KVIC\KVICClassLIB\bin\Debug\KVICClassLIB.pdb
+C:\Data\Projects\KVIC\KVICClassLIB\obj\Debug\ResolveAssemblyReference.cache
+C:\Data\Projects\KVIC\KVICClassLIB\obj\Debug\KVICClassLIB.dll
+C:\Data\Projects\KVIC\KVICClassLIB\obj\Debug\KVICClassLIB.pdb
+D:\frank\Projects\SFURTI\KVIC-21Jan\KVICClassLIB\obj\Debug\ResolveAssemblyReference.cache
+D:\frank\Projects\SFURTI\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.dll
+D:\frank\Projects\SFURTI\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.pdb
+D:\frank\Projects\SFURTI\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.dll
+D:\frank\Projects\SFURTI\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.pdb
+D:\ERP\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.dll
+D:\ERP\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.pdb
+D:\ERP\KVIC-21Jan\KVICClassLIB\obj\Debug\ResolveAssemblyReference.cache
+D:\ERP\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.dll
+D:\ERP\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.pdb
+D:\03-01-2012\4-4-12\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.dll
+D:\03-01-2012\4-4-12\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.pdb
+D:\03-01-2012\4-4-12\KVIC-21Jan\KVICClassLIB\obj\Debug\ResolveAssemblyReference.cache
+D:\03-01-2012\4-4-12\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.dll
+D:\03-01-2012\4-4-12\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.pdb
+D:\Afroz\Code_Backup\KVIC_working\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.dll
+D:\Afroz\Code_Backup\KVIC_working\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.pdb
+D:\Afroz\Code_Backup\KVIC_working\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.dll
+D:\Afroz\Code_Backup\KVIC_working\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.pdb
+D:\Personal Project\KVIC_working\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.dll
+D:\Personal Project\KVIC_working\KVIC-21Jan\KVICClassLIB\bin\Debug\KVICClassLIB.pdb
+D:\Personal Project\KVIC_working\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.csprojAssemblyReference.cache
+D:\Personal Project\KVIC_working\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.csproj.CoreCompileInputs.cache
+D:\Personal Project\KVIC_working\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.dll
+D:\Personal Project\KVIC_working\KVIC-21Jan\KVICClassLIB\obj\Debug\KVICClassLIB.pdb
