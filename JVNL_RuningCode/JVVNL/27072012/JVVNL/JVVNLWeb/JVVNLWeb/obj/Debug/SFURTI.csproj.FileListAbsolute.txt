@@ -1,0 +1,7 @@
+D:\frank\Projects\SFURTI\SFURTI\bin\SFURTI.dll
+D:\frank\Projects\SFURTI\SFURTI\bin\SFURTI.pdb
+D:\frank\Projects\SFURTI\SFURTI\obj\Debug\ResolveAssemblyReference.cache
+D:\frank\Projects\SFURTI\SFURTI\obj\Debug\SFURTI.dll
+D:\frank\Projects\SFURTI\SFURTI\obj\Debug\SFURTI.pdb
+D:\frank\Projects\SFURTI\SFURTI\bin\SFURTIClassLIB.dll
+D:\frank\Projects\SFURTI\SFURTI\bin\SFURTIClassLIB.pdb

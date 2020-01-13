@@ -1,0 +1,12 @@
+MultiPle on save second time error occurs
+
+Enable the counter name on login with administrator
+
+Add CancelTransaction form in Master.
+
+subDivision code should be selected on search
+
+clear amount from Multiple after save where as disable emailid after
+upper save
+
+alert message when countername not selected for administrator

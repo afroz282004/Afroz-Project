@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82714C8B-6B0E-4037-A1B2-08A76A3AC4E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JVVNLClassLib</RootNamespace>
+    <AssemblyName>JVVNLClassLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Access, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bal\bank_bal.cs" />
+    <Compile Include="bal\cashcollection_bal.cs" />
+    <Compile Include="bal\dailycollection_bal.cs" />
+    <Compile Include="bal\payment_bal.cs" />
+    <Compile Include="bal\menu_bal.cs" />
+    <Compile Include="bal\paymenttype_bal.cs" />
+    <Compile Include="bal\report_bal.cs" />
+    <Compile Include="bal\sdo_bal.cs" />
+    <Compile Include="bal\group_bal.cs" />
+    <Compile Include="bal\counter_bal.cs" />
+    <Compile Include="bal\users_bal.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="dal\bank_dal.cs" />
+    <Compile Include="dal\cashcollection_dal.cs" />
+    <Compile Include="dal\dailycollection_dal.cs" />
+    <Compile Include="dal\payment_dal.cs" />
+    <Compile Include="dal\menu_dal.cs" />
+    <Compile Include="dal\paymenttype_dal.cs" />
+    <Compile Include="dal\report_dal.cs" />
+    <Compile Include="dal\sdo_dal.cs" />
+    <Compile Include="dal\group_dal.cs" />
+    <Compile Include="dal\counter_dal.cs" />
+    <Compile Include="dal\users_dal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prop\bank_Prop.cs" />
+    <Compile Include="prop\cashcollection_Prop.cs" />
+    <Compile Include="prop\dailycollection_Prop.cs" />
+    <Compile Include="prop\counter_Prop.cs" />
+    <Compile Include="prop\payment_Prop.cs" />
+    <Compile Include="prop\menu_Prop.cs" />
+    <Compile Include="prop\paymenttype_Prop.cs" />
+    <Compile Include="prop\report_Prop.cs" />
+    <Compile Include="prop\sdo_Prop.cs" />
+    <Compile Include="prop\users_Prop.cs" />
+    <Compile Include="SQLHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

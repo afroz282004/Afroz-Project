@@ -1,0 +1,492 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49C2A7A5-9556-4106-BDD0-F87434DA2226}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JVVNLWeb</RootNamespace>
+    <AssemblyName>JVVNLWeb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.1.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\Trimax\Desktop\itextsharp-all-5.1.3\itextsharp-dll-core-5.1.3\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="JVVNLClassLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\JVVNLClassLib\bin\Release\JVVNLClassLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bank.aspx.cs">
+      <DependentUpon>bank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bank.aspx.designer.cs">
+      <DependentUpon>bank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CancelTransaction.aspx.cs">
+      <DependentUpon>CancelTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CancelTransaction.aspx.designer.cs">
+      <DependentUpon>CancelTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CashCollectionBoy.aspx.cs">
+      <DependentUpon>CashCollectionBoy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changeduedate.aspx.cs">
+      <DependentUpon>changeduedate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changeduedate.aspx.designer.cs">
+      <DependentUpon>changeduedate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckSession.aspx.cs">
+      <DependentUpon>CheckSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckSession.aspx.designer.cs">
+      <DependentUpon>CheckSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="closetransaction.aspx.cs">
+      <DependentUpon>closetransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="closetransaction.aspx.designer.cs">
+      <DependentUpon>closetransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Counter.aspx.cs">
+      <DependentUpon>Counter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Counter.aspx.designer.cs">
+      <DependentUpon>Counter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="crreport.aspx.cs">
+      <DependentUpon>crreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="crreport.aspx.designer.cs">
+      <DependentUpon>crreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DailyCollection.aspx.cs">
+      <DependentUpon>DailyCollection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyCollection.aspx.designer.cs">
+      <DependentUpon>DailyCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\bank.ashx.cs">
+      <DependentUpon>bank.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\CancelTrasaction.ashx.cs">
+      <DependentUpon>CancelTrasaction.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\CashCollectionBoy.ashx.cs">
+      <DependentUpon>CashCollectionBoy.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\Changeduedate.ashx.cs">
+      <DependentUpon>Changeduedate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\counter.ashx.cs">
+      <DependentUpon>counter.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\dailycollection.ashx.cs">
+      <DependentUpon>dailycollection.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\payment.ashx.cs">
+      <DependentUpon>payment.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\paymenttype.ashx.cs">
+      <DependentUpon>paymenttype.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\Report.ashx.cs">
+      <DependentUpon>Report.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\sdo.ashx.cs">
+      <DependentUpon>sdo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\user.ashx.cs">
+      <DependentUpon>user.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="main.Master.cs">
+      <DependentUpon>main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.Master.designer.cs">
+      <DependentUpon>main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDataImport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MasterDataImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDataImport.aspx.designer.cs">
+      <DependentUpon>MasterDataImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="multiple.aspx.cs">
+      <DependentUpon>multiple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="multiple.aspx.designer.cs">
+      <DependentUpon>multiple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paymentsummary.aspx.cs">
+      <DependentUpon>paymentsummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paymentsummary.aspx.designer.cs">
+      <DependentUpon>paymentsummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paymenttype.aspx.cs">
+      <DependentUpon>paymenttype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paymenttype.aspx.designer.cs">
+      <DependentUpon>paymenttype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report123.aspx.cs">
+      <DependentUpon>Report123.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report123.aspx.designer.cs">
+      <DependentUpon>Report123.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sdo.aspx.cs">
+      <DependentUpon>sdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sdo.aspx.designer.cs">
+      <DependentUpon>sdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\chosen.css" />
+    <Content Include="css\demo_page.css" />
+    <Content Include="css\demo_table_jui.css" />
+    <Content Include="css\grid.css" />
+    <Content Include="css\jquery-ui-1.7.2.custom.css" />
+    <Content Include="css\jquery.ui.accordion.css" />
+    <Content Include="css\jquery.ui.all.css" />
+    <Content Include="css\jquery.ui.autocomplete.css" />
+    <Content Include="css\jquery.ui.button.css" />
+    <Content Include="css\jquery.ui.core.css" />
+    <Content Include="css\jquery.ui.datepicker.css" />
+    <Content Include="css\jquery.ui.dialog.css" />
+    <Content Include="css\jquery.ui.progressbar.css" />
+    <Content Include="css\jquery.ui.resizable.css" />
+    <Content Include="css\jquery.ui.selectable.css" />
+    <Content Include="css\jquery.ui.slider.css" />
+    <Content Include="css\jquery.ui.tabs.css" />
+    <Content Include="css\jquery.ui.theme.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\uniform.default.css" />
+    <Content Include="css\validationEngine.jquery.css" />
+    <Content Include="default.aspx" />
+    <Content Include="images\1.png" />
+    <Content Include="images\13.png" />
+    <Content Include="images\17.png" />
+    <Content Include="images\19.png" />
+    <Content Include="images\2.png" />
+    <Content Include="images\accord.png" />
+    <Content Include="images\application-sidebar.png" />
+    <Content Include="images\back_disabled.jpg" />
+    <Content Include="images\back_enabled.jpg" />
+    <Content Include="images\bg-input.png" />
+    <Content Include="images\chosen-sprite.png" />
+    <Content Include="images\control-power.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\equalizer.png" />
+    <Content Include="images\forward_disabled.jpg" />
+    <Content Include="images\forward_enabled.jpg" />
+    <Content Include="images\inbox-image.png" />
+    <Content Include="images\megaphone.png" />
+    <Content Include="images\newspaper.png" />
+    <Content Include="images\sort_asc.png" />
+    <Content Include="images\sort_asc_disabled.png" />
+    <Content Include="images\sort_both.png" />
+    <Content Include="images\sort_desc.png" />
+    <Content Include="images\sort_desc_disabled.png" />
+    <Content Include="images\system-monitor.png" />
+    <Content Include="images\target.png" />
+    <Content Include="images\TrimaxLogo.png" />
+    <Content Include="images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="images\ui-icons_222222_256x240.png" />
+    <Content Include="images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="images\ui-icons_454545_256x240.png" />
+    <Content Include="images\ui-icons_888888_256x240.png" />
+    <Content Include="images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="js\chosen.jquery.js" />
+    <Content Include="js\ckeditor.js" />
+    <Content Include="js\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="js\jquery.dataTables.js" />
+    <Content Include="js\jquery.gvChart-1.0.1.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.placeholder.js" />
+    <Content Include="js\jquery.uniform.js" />
+    <Content Include="js\jquery.validationEngine-en.js" />
+    <Content Include="js\jquery.validationEngine.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\ui_calls.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\jquery.ui.dialog.js" />
+    <Content Include="main.Master" />
+    <Content Include="users.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handler\user.ashx" />
+    <Content Include="images\icon_delete.png" />
+    <Content Include="images\logout.png" />
+    <Content Include="sdo.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bank.aspx" />
+    <Content Include="handler\sdo.ashx" />
+    <Content Include="js\jquery.ui.datepicker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handler\bank.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handler\paymenttype.ashx" />
+    <Content Include="images\payment.png" />
+    <Content Include="images\view.png" />
+    <Content Include="js\jquery-1.6.4.js" />
+    <Content Include="js\jquery.effects.core.js" />
+    <Content Include="js\jquery.ui.core.js" />
+    <Content Include="js\jquery.ui.widget.js" />
+    <Content Include="multiple.aspx" />
+    <Content Include="payment.aspx" />
+    <Content Include="paymenttype.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handler\payment.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handler\counter.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CashCollectionBoy.aspx" />
+    <Content Include="handler\CashCollectionBoy.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="closetransaction.aspx" />
+    <Content Include="Counter.aspx" />
+    <Content Include="DailyCollection.aspx" />
+    <Content Include="handler\dailycollection.ashx" />
+    <Content Include="images\changepassword.png" />
+    <Content Include="images\editrec.png" />
+    <Content Include="images\JVVNL.PNG" />
+    <Content Include="images\receipt.png" />
+    <Content Include="images\Reports.png" />
+    <Content Include="images\resetpwd.png" />
+    <Content Include="images\sms.png" />
+    <Content Include="images\tlogo.jpg" />
+    <Content Include="images\user.png" />
+    <Content Include="images\user_block.png" />
+    <Content Include="MasterDataImport.aspx" />
+    <Content Include="paymentsummary.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\menustyle.css" />
+    <Content Include="handler\Report.ashx" />
+    <Content Include="images\arrow_up.png" />
+    <Content Include="images\navigation.png" />
+    <Content Include="js\dropmenu.js" />
+    <Content Include="js\superfish.js" />
+    <Content Include="Report123.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\superfish.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\menutop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CancelTransaction.aspx" />
+    <Content Include="changeduedate.aspx" />
+    <Content Include="css\demos.css" />
+    <Content Include="css\jquery.ui.base.css" />
+    <Content Include="handler\CancelTrasaction.ashx" />
+    <Content Include="images\JVVNLLong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\JVVNLClassLib.dll" />
+    <Content Include="bin\JVVNLClassLib.pdb" />
+    <Content Include="CheckSession.aspx" />
+    <Content Include="crreport.aspx" />
+    <Content Include="css\ie8.css" />
+    <Content Include="handler\Changeduedate.ashx" />
+    <Content Include="js\html5.js" />
+    <Content Include="js\jquery-idleTimeout.js" />
+    <Content Include="Report.aspx" />
+    <Content Include="Test.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CrystalActiveXReportViewerLib105">
+      <Guid>{A30B2DDF-C00F-469F-A23C-D6177608A128}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="files\" />
+    <Folder Include="ImportData\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1430</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

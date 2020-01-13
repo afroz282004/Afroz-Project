@@ -1,0 +1,134 @@
+
+ul, li{
+	padding: 0px;
+	margin: 0px;
+}
+ul.dropmenu
+{
+	position: relative;
+	margin: 0px;
+	padding: 1px 0px 0px 0px;
+	
+	display: block;
+	height: 32px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+.dropmenu li{
+	position: relative;
+	list-style: none;
+	float: left;
+	background: transparent url(../images/navigation.png) repeat-x  0 0;
+	margin: 0px;
+	padding: 0px;
+	z-index:99999;
+}
+.dropmenu li a{
+	height: 22px;
+	padding: 9px 30px 0px 15px;
+	display: block;
+	cursor: point;
+	border-right: solid 1px #4a779d;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.dropmenu li span{
+	display: block;
+	float: right;
+	height: 10px;
+	width: 10px;
+	background:transparent url(../images/arrow_up.png) repeat-x scroll 0 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.dropmenu li  a:hover span{
+	background:transparent url(images/arrow_hover.png) repeat-x scroll 0 0;
+}
+.dropmenu li:hover ul, .dropmenu li:hover div{
+	display: block;
+}
+.dropmenu ul{
+	position: absolute;
+	display: none;
+	width: 140px;
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #ccc;
+	background: #FFFFFF url(images/gradient.png) repeat-x scroll 0 0;
+}
+.dropmenu ul li{
+	border: 0;
+	float: none;
+}
+.dropmenu ul a {
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  white-space: nowrap;
+  display:block;
+  color: #0657AD;
+  text-decoration: underline;
+  text-transform: none;
+}
+a.selected, a:hover{
+	color: #0657AD !important;
+	background: #FFFFFF url(images/gradient.png) repeat-x scroll 0 0;
+}
+a.selected span{
+	background:transparent url(images/arrow_hover.png) repeat-x scroll 0 0;
+}
+.dropmenu ul a:hover {
+	color:#F67A00 !important;
+	text-decoration: none;
+	background-color: #F0F0F0;
+	background-image: none;
+}
+.dropmenu div ul{
+	position: relative;
+	display: block;
+}
+.dropmenu li div{
+	background: #FFFFFF url(images/gradient.png) repeat-x scroll 0 0;
+	border: 1px solid #ccc;
+	padding: 5px;
+	display: none;
+	position: absolute;
+}
+.dropmenu li div ul{
+	border: none;
+	background: none;
+	position: relative !important;
+}
+.dropmenu li div a{
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+.dropmenu li div div{
+	display: block;
+	position: relative;
+	background: none;
+	border: none;
+}
+.dropmenu li div div a{
+	display: inline;
+	border: none;
+	color: #666;
+	text-decoration: underline;
+	padding: 0px;
+	margin: 0px;
+	text-transform: none;
+}
+.dropmenu li div div a:hover{
+	color: #000;
+	text-decoration: none;
+}
+ul.left{
+	float: left;
+	width: 145px;
+}
+ul.right{
+	float: right;
+	width: 145px;
+}
+
